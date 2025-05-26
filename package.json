@@ -27,6 +27,7 @@
     "randomatic": "^3.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "supabase": "^2.22.6",
     "tailwind-merge": "^3.2.0",
     "url-validator": "^2.0.3",
     "validator": "^13.15.0",

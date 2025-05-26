@@ -13,7 +13,7 @@ export default async function Home() {
       <div className="flex items-center text-xl sm:text-2xl justify-center flex-wrap gap-1 mb-10">
         <span>Because</span>
         <span className="py-1 font-semibold italic text rounded text-rose-400">
-          "size does matter"
+          &quot;size does matter&quot;
         </span>
         <span className="text-2xl font-serif">;)</span>
       </div>

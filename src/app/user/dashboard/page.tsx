@@ -16,7 +16,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Page() {
-  const [urls, setUrls] = useState<Record<string, any>[] | null>(null);
+  const [urls, setUrls] = useState<Record<string, string>[] | null>(null);
   const { userId } = userStore();
 
   useEffect(() => {

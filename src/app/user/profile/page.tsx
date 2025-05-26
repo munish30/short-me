@@ -9,7 +9,7 @@ function UserProfilePage() {
   if (!isLoggedIn()) {
     return (
       <div className="flex flex-col items-center justify-center h-full w-full text-center text-xl p-5">
-        <p className="text-gray-700">You're not logged in.</p>
+        <p className="text-gray-700">You&rsquo;re not logged in.</p>
       </div>
     );
   }

@@ -9,7 +9,8 @@ import { UUID } from "crypto";
 
 function LoginClient() {
   const router = useRouter();
-  const link = useSearchParams().get("link");
+  const params = useSearchParams();
+  const link = params.get('link')
   const [errors, setErrors] = useState<Record<string, string> | null>(null);
   const [email, setEmail] = useState<string>("");
 

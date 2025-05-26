@@ -11,11 +11,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 function Login({ loggedIn }: Readonly<{ loggedIn: boolean }>) {
-  const router = useRouter();
   return (
     <div>
       {!loggedIn ? (

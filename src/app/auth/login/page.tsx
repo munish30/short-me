@@ -1,6 +1,7 @@
 import Link from "next/link";
 import LoginClient from "./client.page";
 import { SideBanner } from "../SideBanner";
+import { Suspense } from "react";
 
 function Login() {
   return (
@@ -10,7 +11,9 @@ function Login() {
 
         <div className="flex justify-center items-center w-full">
           <SideBanner />
-          <LoginClient />
+          <Suspense fallback={<div>Loading...</div>}>
+            <LoginClient />
+          </Suspense>
         </div>
 
         <div className="flex gap-2">

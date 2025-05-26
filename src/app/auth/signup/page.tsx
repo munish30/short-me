@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Suspense } from "react";
 import SignupClient from "./SignupClient";
 
 function Signup() {
@@ -8,7 +8,9 @@ function Signup() {
         <h1 className="font-bold text-4xl p-2 border-b-2">Signup</h1>
 
         <div className="flex justify-center items-center w-full">
-          <SignupClient />
+          <Suspense fallback={<div>Loading...</div>}>
+            <SignupClient />
+          </Suspense>
         </div>
       </div>
     </div>
